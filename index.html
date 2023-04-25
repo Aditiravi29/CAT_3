@@ -91,6 +91,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     <!-- navbar -->
     
+	
+	
+	dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "purchase",
+  ecommerce: {
+      items: [
+       {
+        item_id: "PROD_1",
+        item_name: "Python",
+        affiliation: "Courses Available",
+        currency: "INR"
+      },
+      {
+        item_id: "PROD_2",
+        item_name: "Web Analytics",
+        affiliation: "Courses Available",
+        
+      }]
+  }
+});
+	
+	
+	
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-nav fixed-top">
         <div class="container">
